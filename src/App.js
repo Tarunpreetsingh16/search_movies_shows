@@ -1,12 +1,16 @@
 import { useEffect } from 'react';
 import './App.css';
+import HomePage from './pages/Homepage';
+import { setupTheme } from './utilities/theme';
 
 function App() {
   useEffect(() => {
-    console.log("helloooooo");
+    setupTheme();
   }, []);
+
   return (
     <div className="App">
+      <HomePage />
     </div>
   );
 }

@@ -1,0 +1,11 @@
+nav {
+    background-color: var(--main-theme-color);
+    display: flex;
+    padding: 1.5rem;
+}
+#logo-title {
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    font-size: 18px;
+    font-weight: 500;
+}

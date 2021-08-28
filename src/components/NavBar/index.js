@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import SearchBox from '../SearchBox'
 
 const NavBar = () => {
     return (
@@ -9,6 +10,7 @@ const NavBar = () => {
                     SearchToBinge
                 </h1>
             </div>
+            <SearchBox />
         </nav>
     );
 };

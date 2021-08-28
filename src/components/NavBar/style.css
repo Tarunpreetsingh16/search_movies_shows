@@ -2,6 +2,8 @@ nav {
     background-color: var(--main-theme-color);
     display: flex;
     padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
 }
 #logo-title {
     text-transform: uppercase;

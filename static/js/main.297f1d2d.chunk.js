@@ -1,0 +1,2 @@
+(this["webpackJsonpmovie-search"]=this["webpackJsonpmovie-search"]||[]).push([[0],{11:function(e,o,t){"use strict";t.r(o);var c=t(0),n=t.n(c),s=t(3),i=t.n(s),r=(t(8),t(9),t(1));var a=function(){return Object(c.useEffect)((function(){console.log("helloooooo")}),[]),Object(r.jsx)("div",{className:"App"})};i.a.render(Object(r.jsx)(n.a.StrictMode,{children:Object(r.jsx)(a,{})}),document.getElementById("root"))},8:function(e,o,t){},9:function(e,o,t){}},[[11,1,2]]]);
+//# sourceMappingURL=main.297f1d2d.chunk.js.map

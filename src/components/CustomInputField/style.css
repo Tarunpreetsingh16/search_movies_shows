@@ -1,0 +1,12 @@
+input{
+    border: 0;
+    padding: 0.5rem;
+    width: 15rem;
+}
+input:focus {
+    outline: 0;
+}
+input::placeholder {
+    font-style: italic;
+    font-size: 10px;
+}

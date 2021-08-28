@@ -1,0 +1,16 @@
+.search-box {
+    display: flex;
+}
+.magnifying-glass-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding-right: 0.5rem;
+}
+.magnifying-glass {
+    height: 15px;
+}
+.magnifying-glass-container:hover {
+    cursor: pointer;
+}

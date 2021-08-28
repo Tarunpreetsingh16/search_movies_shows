@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
-import HomePage from './pages/Homepage';
+import HomePage from './containers/Homepage';
 import { setupTheme } from './utilities/theme';
 
 function App() {

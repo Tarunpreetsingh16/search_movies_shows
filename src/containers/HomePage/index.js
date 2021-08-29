@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ContentCard from '../../components/ContentCard';
-import HorizontalSlider from '../../components/HorizontalSlider';
-import NavBar from '../../components/NavBar';
 import { getTrendingMovies, getTrendingShows } from '../../services/trending.service';
 import Slider from './childrenComponents/Slider';
 import './style.css';
@@ -36,7 +33,6 @@ const HomePage = () => {
 
     return (
         <div>
-            <NavBar />
             <h2 className='heading local-sub-heading'>
                 Trending Today
             </h2>

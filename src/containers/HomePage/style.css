@@ -1,3 +1,13 @@
 .slider {
     margin-top: 1rem;
 }
+.local-heading {
+    text-align: left;
+    padding: 0.5rem 1.5rem;
+}
+
+.local-sub-heading {
+    margin-top: 1rem;
+    text-align: left;
+    padding-left: 1.5rem;
+}

@@ -3,6 +3,7 @@ import ContentCard from '../../components/ContentCard';
 import HorizontalSlider from '../../components/HorizontalSlider';
 import NavBar from '../../components/NavBar';
 import { getTrendingMovies, getTrendingShows } from '../../services/trending.service';
+import Slider from './childrenComponents/Slider';
 import './style.css';
 
 const HomePage = () => {
@@ -26,44 +27,19 @@ const HomePage = () => {
     }, []);
 
     const trendingMoviesContent = (
-        <div className='slider'>
-            <HorizontalSlider
-                perMove={1}
-                perPage={5}
-                slideWidth='300px'
-            >
-                {
-                    movies.map((show) => {
-                        return (
-                            <ContentCard key={show.id}/>
-                        );
-                    })
-                }
-            </HorizontalSlider>
-        </div>
+        <Slider title='Movies' content={movies} />
     );
 
     const trendingShowsContent = (           
-        <div className='slider'>
-            <HorizontalSlider
-                perMove={1}
-                perPage={5}
-                slideWidth='300px'
-            >
-                {
-                    shows.map((show) => {
-                        return (
-                            <ContentCard key={show.id}/>
-                        );
-                    })
-                }
-            </HorizontalSlider>
-        </div>
+        <Slider title='Shows' content={shows} />
     );
 
     return (
         <div>
             <NavBar />
+            <h2 className='heading local-sub-heading'>
+                Trending Today
+            </h2>
             {movies && movies.length > 0 ? trendingMoviesContent : null}
             {shows && shows.length > 0 ? trendingShowsContent : null}
         </div>

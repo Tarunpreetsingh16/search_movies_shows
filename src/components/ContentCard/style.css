@@ -39,11 +39,14 @@
     position: absolute;
     top: -10px;
     width: 100%;
-    background-color: black;
+    border: 1px solid #919191;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: white;
     width: 80%;
 }
 .meter {
-    color: white;
+    color: black;
 }
 .popularity-meter::before {
     content: '';
@@ -60,6 +63,7 @@
 }
 .picture-container {
     position: relative;
+    overflow: hidden;
 }
 .picture-overlay {
     background-color: rgba(0, 0, 0, 0.8);
@@ -108,7 +112,9 @@ p::-webkit-scrollbar-thumb:hover {
 .poster:hover {
     transform: scale(1.2);
 }
-
+.poster {
+    height: 278px;
+}
 @keyframes scaleWidth {
     100% {
         width: 100%;

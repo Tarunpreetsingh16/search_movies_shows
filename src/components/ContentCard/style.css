@@ -1,4 +1,121 @@
-.content-container {
-    height: 300px;
+.details-container {
     background-color: #c4c4c480;
+    width: 185px;
+    justify-content: space-between;
+    display: block;
+}
+.basic-details {
+    display: flex;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+.details-intro {
+    display: flex;
+    text-align: left;
+    width: 70%;
+}
+.title {
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.release-date {
+    font-size: 15px;
+    font-weight: 400;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popularity-container {
+    position: relative;
+    background-color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+.popularity-meter {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    background-color: black;
+    width: 80%;
+}
+.meter {
+    color: white;
+}
+.popularity-meter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    background-color: #919191;
+    height: 100%;
+}
+.popularity-meter:hover::before {
+    background-color: #919191;
+    animation: 0.3s scaleWidth ease-in-out forwards;
+}
+.picture-container {
+    position: relative;
+}
+.picture-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+}
+p {
+    color: white;
+    font-size: 12px;
+    height: 150px;
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    text-align: left;
+    line-height: 1.2rem;
+    padding: 1rem;
+}
+p::-webkit-scrollbar {
+    width: 5px;
+}
+p::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+}
+p::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 0, 0.767); 
+    border-radius: 10px;
+}
+p::-webkit-scrollbar-thumb:hover {
+    background: red; 
+}
+.picture-overlay:hover {
+    opacity: 1;
+}
+.content-container:hover {
+    cursor: pointer;
+}
+.poster:hover {
+    transform: scale(1.2);
+}
+
+@keyframes scaleWidth {
+    100% {
+        width: 100%;
+        content: 'Popularity Meter';
+        color: white;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 15px;
+    }
 }

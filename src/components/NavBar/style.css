@@ -11,3 +11,11 @@ nav {
     font-size: 18px;
     font-weight: 500;
 }
+@media only screen and (max-width: 520px) {
+    nav {
+        flex-direction: column;
+    }
+    #logo-title {
+        margin-bottom: 1rem;
+    }
+}

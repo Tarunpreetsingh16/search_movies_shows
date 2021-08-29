@@ -8,6 +8,7 @@ export const getTrendingMovies = async () => {
         return response.data;
     } catch(err) {
         console.log(err);
+        throw err;
     }
 };
 
@@ -19,5 +20,6 @@ export const getTrendingShows = async () => {
         return response.data;
     } catch(err) {
         console.log(err);
+        throw err;
     }
 };

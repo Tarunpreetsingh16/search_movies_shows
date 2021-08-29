@@ -1,25 +1,22 @@
 import React from 'react';
 import './style.css';
-import sliderArrow from '../../assets/img/sliderArrow.png';
+import {Splide, SplideSlide} from '@splidejs/react-splide';
 
-const HorizontalSlider = () => {
+const HorizontalSlider = ({children, perPage, perMove, slideWidth}) => {
     return (
-        <div className='horizontal-slider'>
-            <div className='slide-arrow-container'>
-                <img
-                    src={sliderArrow}
-                    alt='slide left'
-                    className='slider-arrow'
-                />
-            </div>
-            <div className='slide-arrow-container'>
-                <img
-                    src={sliderArrow}
-                    alt='slide right'
-                    className='slider-arrow flip-slider-arrow'
-                />
-            </div>
-        </div>
+        <Splide
+            options={ {
+                width  : '100%',
+                gap    : '1rem',
+                perPage,
+                perMove,
+                fixedWidth: slideWidth,
+            } }
+        >
+            {
+                React.Children.map(children, child => <SplideSlide>{child}</SplideSlide>)
+            }
+        </Splide>
     );
 };
 

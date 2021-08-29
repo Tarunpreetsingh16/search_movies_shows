@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import './App.css';
 import HomePage from './containers/HomePage';
 import { setupTheme } from './utilities/theme';
+import Footer from './components/Footer'
+import NavBar from './components/NavBar';
 
 function App() {
   useEffect(() => {
@@ -10,7 +12,9 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <HomePage />
+      <Footer />
     </div>
   );
 }
